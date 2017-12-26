@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.example.abdul_wahab.lab05fall17fragment2activitycommunication.MainActivity"
+	>
+	
+	<TextView
+		android:id="@+id/txtMessage"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="89dp"
+		android:text="Hello World!"
+		android:textSize="48sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		/>
+	
+	<fragment
+		android:id="@+id/fragment"
+		android:name="com.example.abdul_wahab.lab05fall17fragment2activitycommunication.fragments.SampleFragment"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/txtMessage"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="46dp"
+		tools:layout="@layout/fragment_sample"
+		/>
+
+</RelativeLayout>
